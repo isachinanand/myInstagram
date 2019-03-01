@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QqH-1f-fax">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Signup View Controller-->
+        <scene sceneID="gft-dd-EF2">
+            <objects>
+                <viewController id="QqH-1f-fax" customClass="SignupViewController" customModule="testApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TBH-Mk-qVz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hY-aa-EOu">
+                                <rect key="frame" x="0.0" y="20" width="375" height="980"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ip0-Xh-XEj" customClass="gradientView" customModule="testApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1071.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1200px-Instagram_logo" translatesAutoresizingMaskIntoConstraints="NO" id="jbP-gg-Ljw">
+                                                <rect key="frame" x="137.5" y="30" width="100" height="40"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="PsB-B7-qzT"/>
+                                                    <constraint firstAttribute="width" constant="100" id="SW2-S1-xnN"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Sign up to see photos and videos from your friends" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBI-PU-JSE">
+                                                <rect key="frame" x="64" y="86" width="246" height="41"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="qBz-5z-cSv">
+                                                <rect key="frame" x="20" y="159" width="335" height="749"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZRt-he-hag" customClass="IINtextField" customModule="testApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="35"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="35" id="P7I-ra-ibI"/>
+                                                        </constraints>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Middle Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i6M-9H-her" customClass="IINtextField" customModule="testApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="51" width="335" height="35"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Zm-cV-HEu" customClass="IINtextField" customModule="testApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="102" width="335" height="35"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HqX-Sf-qIy" customClass="IINtextField" customModule="testApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="153" width="335" height="35"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gP2-D9-0Uk" customClass="IINtextField" customModule="testApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="204" width="335" height="35"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WCc-ou-d7u" customClass="IINtextField" customModule="testApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="255" width="335" height="35"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9rK-oX-iG5" customClass="IINtextField" customModule="testApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="306" width="335" height="35"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ouj-yT-CO9" customClass="IINtextField" customModule="testApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="357" width="335" height="35"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GlW-OM-4J0" customClass="IINtextField" customModule="testApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="408" width="335" height="35"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hometown" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L40-jH-zE4" customClass="IINtextField" customModule="testApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="459" width="335" height="35"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Alternate Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AcT-Aj-Xni" customClass="IINtextField" customModule="testApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="510" width="335" height="35"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Father Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LBC-Gh-1Ex" customClass="IINtextField" customModule="testApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="561" width="335" height="35"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mother Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pxg-nB-gqi" customClass="IINtextField" customModule="testApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="612" width="335" height="35"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fOv-JJ-7Ih" customClass="IINtextField" customModule="testApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="663" width="335" height="35"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gfb-Fd-42F" customClass="IINtextField" customModule="testApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="714" width="335" height="35"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xI-iG-FUl">
+                                                <rect key="frame" x="64" y="924" width="247" height="50"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="EBM-sk-Wzk"/>
+                                                </constraints>
+                                                <state key="normal" title="Signup">
+                                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="QqH-1f-fax" eventType="touchUpInside" id="hZZ-JK-sS2"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="By signipng up, You agree to our Terms &amp; Policy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7c-l4-JUw">
+                                                <rect key="frame" x="70" y="1006" width="240" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Y7c-l4-JUw" firstAttribute="leading" secondItem="Ip0-Xh-XEj" secondAttribute="leading" constant="70" id="AWg-mq-zYd"/>
+                                            <constraint firstAttribute="trailing" secondItem="dBI-PU-JSE" secondAttribute="trailing" constant="65" id="F3n-uF-KwU"/>
+                                            <constraint firstItem="jbP-gg-Ljw" firstAttribute="top" secondItem="Ip0-Xh-XEj" secondAttribute="top" constant="30" id="RPI-hc-Rmb"/>
+                                            <constraint firstItem="0xI-iG-FUl" firstAttribute="leading" secondItem="Ip0-Xh-XEj" secondAttribute="leading" constant="64" id="Vf4-dT-Yx4"/>
+                                            <constraint firstAttribute="trailing" secondItem="0xI-iG-FUl" secondAttribute="trailing" constant="64" id="b4z-f4-3R7"/>
+                                            <constraint firstAttribute="bottom" secondItem="Y7c-l4-JUw" secondAttribute="bottom" constant="32" id="bCw-rX-L9o"/>
+                                            <constraint firstItem="qBz-5z-cSv" firstAttribute="leading" secondItem="Ip0-Xh-XEj" secondAttribute="leading" constant="20" id="gd0-l7-TLT"/>
+                                            <constraint firstAttribute="trailing" secondItem="Y7c-l4-JUw" secondAttribute="trailing" constant="65" id="hRv-1C-v7N"/>
+                                            <constraint firstItem="jbP-gg-Ljw" firstAttribute="centerX" secondItem="Ip0-Xh-XEj" secondAttribute="centerX" id="jUl-wK-keA"/>
+                                            <constraint firstItem="Y7c-l4-JUw" firstAttribute="top" secondItem="0xI-iG-FUl" secondAttribute="bottom" constant="32" id="kXu-7n-zGw"/>
+                                            <constraint firstItem="dBI-PU-JSE" firstAttribute="top" secondItem="jbP-gg-Ljw" secondAttribute="bottom" constant="16" id="n5e-D3-Had"/>
+                                            <constraint firstItem="0xI-iG-FUl" firstAttribute="top" secondItem="qBz-5z-cSv" secondAttribute="bottom" constant="16" id="nne-ly-ygZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="qBz-5z-cSv" secondAttribute="trailing" constant="20" id="qRa-PO-fsG"/>
+                                            <constraint firstItem="qBz-5z-cSv" firstAttribute="top" secondItem="dBI-PU-JSE" secondAttribute="bottom" constant="32" id="s4f-Ev-2M3"/>
+                                            <constraint firstItem="dBI-PU-JSE" firstAttribute="leading" secondItem="Ip0-Xh-XEj" secondAttribute="leading" constant="64" id="sV5-Vs-uEC"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Ip0-Xh-XEj" secondAttribute="trailing" id="556-Wt-FF1"/>
+                                    <constraint firstItem="Ip0-Xh-XEj" firstAttribute="top" secondItem="1hY-aa-EOu" secondAttribute="top" id="QlJ-nQ-QfY"/>
+                                    <constraint firstItem="Ip0-Xh-XEj" firstAttribute="leading" secondItem="1hY-aa-EOu" secondAttribute="leading" id="VAd-kD-0C1"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ip0-Xh-XEj" secondAttribute="bottom" id="kvG-c1-M9q"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ip0-Xh-XEj" secondAttribute="bottom" id="trK-Pc-rpW"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ip0-Xh-XEj" firstAttribute="width" secondItem="TBH-Mk-qVz" secondAttribute="width" id="9vQ-xR-rSV"/>
+                            <constraint firstItem="1hY-aa-EOu" firstAttribute="top" secondItem="j7C-R4-tmx" secondAttribute="top" id="FYy-ut-bI1"/>
+                            <constraint firstItem="j7C-R4-tmx" firstAttribute="bottom" secondItem="1hY-aa-EOu" secondAttribute="bottom" id="Z5s-kW-3A5"/>
+                            <constraint firstItem="Ip0-Xh-XEj" firstAttribute="height" secondItem="TBH-Mk-qVz" secondAttribute="height" priority="200" id="cyI-Nw-Rgy"/>
+                            <constraint firstItem="1hY-aa-EOu" firstAttribute="trailing" secondItem="j7C-R4-tmx" secondAttribute="trailing" id="f8J-H9-KdH"/>
+                            <constraint firstItem="1hY-aa-EOu" firstAttribute="leading" secondItem="j7C-R4-tmx" secondAttribute="leading" id="gXe-N6-ahM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="j7C-R4-tmx"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="signupButton" destination="0xI-iG-FUl" id="lkw-pa-rJa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WgG-T3-o8D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39.200000000000003" y="-113.3433283358321"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1200px-Instagram_logo" width="1200" height="429"/>
+    </resources>
+</document>
